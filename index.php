@@ -16,7 +16,8 @@ const GEOCODE_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 $params = [
     'region' => REGION,
     'bounds' => NOTTINGHAM_SOUTH . ',' . NOTTINGHAM_WEST . '|' . NOTTINGHAM_NORTH . ',' . NOTTINGHAM_EAST,
-    'address' => $_GET['place']
+    'address' => $_GET['place'],
+    'key' => file_get_contents('api_key.txt')
 ];
 
 $guzzle = new Client();
