@@ -17,7 +17,7 @@ $params = [
     'region' => REGION,
     'bounds' => NOTTINGHAM_SOUTH . ',' . NOTTINGHAM_WEST . '|' . NOTTINGHAM_NORTH . ',' . NOTTINGHAM_EAST,
     'address' => $_GET['place'],
-    'key' => file_get_contents(i__DIR__ . '/api_key.txt')
+    'key' => file_get_contents(__DIR__ . '/api_key.txt')
 ];
 
 $guzzle = new Client();
