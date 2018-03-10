@@ -23,5 +23,4 @@ $guzzle = new Client();
 
 $result = $guzzle->get(GEOCODE_API_URL, ['query' => $params]);
 
-print_r($result);
-
+print_r($result->getBody());
